@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15-mar-2014 14:16:28 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="proyecto.Peliculas" table="PELICULAS" schema="BEA">
+        <id name="idpel" type="int">
+            <column name="IDPEL" />
+            <generator class="assigned" />
+        </id>
+        <property name="titulo" type="string">
+            <column name="TITULO" length="35" />
+        </property>
+        <property name="director" type="string">
+            <column name="DIRECTOR" length="20" />
+        </property>
+        <property name="actores" type="string">
+            <column name="ACTORES" length="100" />
+        </property>
+        <property name="genero" type="string">
+            <column name="GENERO" length="30" />
+        </property>
+        <property name="fechaestreno" type="date">
+            <column name="FECHAESTRENO" length="10" />
+        </property>
+        <property name="valoracion" type="java.lang.Double">
+            <column name="VALORACION" precision="52" scale="0" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="DESCRIPCION" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

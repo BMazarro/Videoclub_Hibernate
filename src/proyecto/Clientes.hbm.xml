@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15-mar-2014 14:16:28 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="proyecto.Clientes" table="CLIENTES" schema="BEA">
+        <id name="idcli" type="int">
+            <column name="IDCLI" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="NOMBRE" length="15" />
+        </property>
+        <property name="apellidos" type="string">
+            <column name="APELLIDOS" length="30" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="DIRECCION" length="40" />
+        </property>
+        <property name="codpostal" type="string">
+            <column name="CODPOSTAL" length="5" />
+        </property>
+        <property name="localidad" type="string">
+            <column name="LOCALIDAD" length="30" />
+        </property>
+        <property name="provincia" type="string">
+            <column name="PROVINCIA" length="20" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="TELEFONO" length="9" />
+        </property>
+        <property name="observaciones" type="string">
+            <column name="OBSERVACIONES" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
